@@ -8,9 +8,7 @@ function get_news_posts()
     ob_start();
 
     global $post;
-
-    $current_post_id = $post->ID;
-
+    
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Get the current page number
 
     $args = array(
